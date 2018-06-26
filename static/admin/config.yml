@@ -1,0 +1,43 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+collections:
+  - name: "genre" # Used in routes, e.g., /admin/collections/blog
+    label: "Genre" # Used in the UI
+    folder: "_content/genres" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    format: 'json'
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+    - name: "book" # Used in routes, e.g., /admin/collections/blog
+      label: "Books" # Used in the UI
+      folder: "_content/books" # The path to the folder where the documents are stored
+      create: true # Allow users to create new documents in this collection
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+      format: 'json'
+      fields: # The fields for each document, usually in front matter
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Publish Date", name: "date", widget: "datetime"}
+        - {label: "Genre", name: "genre", widget: "relation", collection: "genre", searchFields: ["title"], valueField: "title" }
+        - {label: "Cover Image", name: "cover", widget: "image"}
+        - {label: "Paper Link", name: "paper_link", widget: "string", required: false}
+        - {label: "Ebook Link", name: "ebook_link", widget: "string", required: false}
+        - {label: "ISBN", name: "isbn", widget: "string", required: false}
+        - {label: "Price", name: "price", widget: "string", required: false}
+        - {label: "Pages", name: "pages", widget: "number", valueType: "int", min: 1, max: 99999, required: false}
+        - {label: "Body", name: "body", widget: "text"}
+      - name: "author" # Used in routes, e.g., /admin/collections/blog
+        label: "Author" # Used in the UI
+        folder: "_content/authors" # The path to the folder where the documents are stored
+        create: true # Allow users to create new documents in this collection
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+        format: 'json'
+        fields: # The fields for each document, usually in front matter
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Publish Date", name: "date", widget: "datetime"}
+          - {label: "Author Image", name: "image", widget: "image"}
+          - {label: "About", name: "about", widget: "text"}
