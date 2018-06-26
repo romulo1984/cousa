@@ -2,9 +2,9 @@
   <section class="container">
     <h2>Cousa</h2>
     <ul>
-      <li v-for="post in posts" :key="post.date">
-        <nuxt-link :to="post._path">
-          {{ post.title }}
+      <li v-for="book in books" :key="book.date">
+        <nuxt-link :to="book._path">
+          {{ book.title }}
         </nuxt-link>
       </li>
     </ul>
@@ -27,7 +27,7 @@ export default {
       _path: `/books/${key.replace('.json', '')}`
     }));
 
-    return { posts };
+    return { books };
   }
 };
 </script>
