@@ -1,12 +1,12 @@
 {
-  "title": "Hello world",
+  "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea **takimata sanctus** est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+  "genre": "Poesia",
+  "pages": 454,
+  "price": "59",
+  "ebook_link": "https://tribunaonline.com.br",
+  "paper_link": "http://globo.com",
   "date": "2018-02-13T19:32:44.767Z",
-  "genre": "poesia",
-  "cover": "",
-  "paper_link": "",
-  "ebook_link": "",
-  "isbn": "",
-  "price": "",
-  "pages": "",
-  "body": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea **takimata sanctus** est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+  "isbn": "as54asd5f455",
+  "cover": "/images/uploads/por-baixo-da-pele.jpg",
+  "title": "Por Baixo da Pele"
 }
