@@ -24,7 +24,7 @@ export default {
 
     const books = context.keys().map(key => ({
       ...context(key),
-      _path: `/books/${key.replace('.json', '')}`
+      _path: `/book/${key.replace('.json', '').replace('./', '')}`
     }));
 
     return { books };

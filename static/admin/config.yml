@@ -6,7 +6,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 collections:
   - name: "genre" # Used in routes, e.g., /admin/collections/blog
     label: "Genre" # Used in the UI
-    folder: "_content/genres" # The path to the folder where the documents are stored
+    folder: "_content/genres/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     format: 'json'
@@ -15,7 +15,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
   - name: "book" # Used in routes, e.g., /admin/collections/blog
     label: "Books" # Used in the UI
-    folder: "_content/books" # The path to the folder where the documents are stored
+    folder: "_content/books/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     format: 'json'
@@ -32,7 +32,7 @@ collections:
       - {label: "Body", name: "body", widget: "text"}
   - name: "author" # Used in routes, e.g., /admin/collections/blog
     label: "Author" # Used in the UI
-    folder: "_content/authors" # The path to the folder where the documents are stored
+    folder: "_content/authors/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     format: 'json'
